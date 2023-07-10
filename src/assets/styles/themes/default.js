@@ -1,16 +1,16 @@
 export default {
   colors: {
-    background: "#F6F5FC",
     primary: {
-      lighter: "#E0E3FF",
-      light: "#6674F4",
-      main: "#5061FC",
-      dark: "#3346F0",
+      lightViolet: "#939BF4",
+      violet: "#6674F4",
+      veryDarkBlue: "#19202D",
+      midnight: "#121721",
     },
-
-    gray: {
-      900: "#222222",
-      200: "#BCBCBC",
+    secondary: {
+      white: "#FFFFFF",
+      lightGray: "#F4F6F8",
+      gray: "#9DAEC2",
+      darkGray: "#6E8098",
     },
     danger: {
       light: "#F97171",
