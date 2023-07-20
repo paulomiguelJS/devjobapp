@@ -5,6 +5,8 @@ import iconMoon from "../../assets/images/desktop/icon-moon.svg";
 import { HeaderContainer, Switch, Container } from "./styles";
 import { useState } from "react";
 
+import MainSearch from "../MainSearch";
+
 export default function Header() {
   const [isToggled, setIsToggled] = useState(false);
 
@@ -20,11 +22,12 @@ export default function Header() {
         <div>
           <img src={iconSun} alt="Sun Light Theme" />
 
-          <Switch
-        
-            onToggle={handleToggle}
-          >
-            <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+          <Switch onToggle={handleToggle}>
+            <input
+              type="checkbox"
+              checked={isToggled}
+              onChange={handleToggle}
+            />
             <span className="slider round"></span>
           </Switch>
 

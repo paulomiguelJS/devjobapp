@@ -1,9 +1,9 @@
-import { NotFound } from "./styles";
+import { NotFoundContainer } from "./styles";
 
-export default function Home() {
+export default function NotFound() {
   return (
-    <NotFound>
-      <h1>Home</h1>
-    </NotFound>
+    <NotFoundContainer>
+      <h1>NotFound</h1>
+    </NotFoundContainer>
   );
 }

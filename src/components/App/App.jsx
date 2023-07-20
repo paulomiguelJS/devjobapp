@@ -7,16 +7,14 @@ import defaultTheme from "../../assets/styles/themes/default";
 
 import HeaderContainer from "../Header";
 
-
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyles />
 
-        <HeaderContainer />
         <Routes />
-
+        
       </ThemeProvider>
     </BrowserRouter>
   );

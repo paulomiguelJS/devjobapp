@@ -1,5 +1,12 @@
+import Header from "../../components/Header";
+import MainSearch from "../../components/MainSearch";
 
 
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+   <Header />
+   <MainSearch />
+    </>
+  )
 }

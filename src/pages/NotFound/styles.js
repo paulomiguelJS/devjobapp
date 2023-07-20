@@ -1,4 +1,4 @@
 import styled from "styled-components"
 
-export const NotFound = styled.div`
+export const NotFoundContainer = styled.div`
 `

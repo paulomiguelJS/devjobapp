@@ -3,6 +3,7 @@ import headerBackground from "../../assets/images/desktop/bg-pattern-header.svg"
 
 export const HeaderContainer = styled.header`
   background-image: url(${headerBackground});
+  background-size: cover;
   border-bottom-left-radius: 100px;
 `;
 
