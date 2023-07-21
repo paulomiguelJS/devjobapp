@@ -4,12 +4,17 @@ export const SearchBoxContainer = styled.form`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: #fff;
   padding: 8px;
   border-radius: 4px;
   width: 80%;
+  position: absolute;
+  top: 115px;
+  right: 140px;
+  padding-left: 36px;
+  padding-right: 36px;
 
-  margin: -2rem auto 0;
+
 `;
 
 export const InputContainer = styled.div`

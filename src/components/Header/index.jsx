@@ -34,6 +34,8 @@ export default function Header() {
           <img src={iconMoon} alt="Moon Dark Theme" />
         </div>
       </Container>
+      <MainSearch />
+
     </HeaderContainer>
   );
 }
