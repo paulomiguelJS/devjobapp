@@ -13,18 +13,16 @@ export const SearchBoxContainer = styled.form`
   right: 140px;
   padding-left: 36px;
   padding-right: 36px;
-
-
 `;
 
 export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   margin-right: 16px;
-
+  border: 1px solid red;
+  width: 100%;
+  
   img {
-    width: 20px;
-    height: 20px;
     margin-right: 8px;
   }
 
@@ -47,7 +45,7 @@ export const InputContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  padding: 8px 16px;
+  padding: 8px 24px;
   background-color: #007bff;
   color: #fff;
   border: none;
