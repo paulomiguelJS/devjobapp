@@ -8,10 +8,14 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Container = styled.div`
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
+  flex-direction: column;
+  border: 1px solid red;
   max-width: 1120px;
   margin: 0 auto;
   padding: 52px 36px;
@@ -19,13 +23,12 @@ export const Container = styled.div`
   div {
     display: flex;
     align-items: center;
-
-    img {
+ 
+    div:nth-child(2) > img{
       margin: 0 10px;
     }
-  }
+  
 
-  MainSearch {
   }
 `;
 
@@ -41,6 +44,7 @@ export const Switch = styled.label`
     height: 0;
   }
 
+ 
   .slider {
     position: absolute;
     cursor: pointer;

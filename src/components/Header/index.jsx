@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <Container>
+        <div>
         <a href="/">
           <img src={logo} alt="Devjobs Logo" />
         </a>
@@ -33,8 +34,11 @@ export default function Header() {
 
           <img src={iconMoon} alt="Moon Dark Theme" />
         </div>
-      </Container>
+        </div>
+       
       <MainSearch />
+
+      </Container>
 
     </HeaderContainer>
   );
