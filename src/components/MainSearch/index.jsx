@@ -1,34 +1,40 @@
-import { SearchBoxContainer, InputContainer, Button } from "./styles";
+import {
+  SearchBoxContainer,
+  InputContainer,
+  SearchContainer,
+  Button,
+} from "./styles";
 import iconSearch from "../../assets/images/desktop/icon-search.svg";
 import iconLocation from "../../assets/images/desktop/icon-location.svg";
 
 export default function MainSearch() {
   return (
     <SearchBoxContainer>
-      <InputContainer>
+      <InputContainer >
+        <label htmlFor="filter"></label>
         <img src={iconSearch} alt="Search Icon - Magnifying Glass" />
-        <label
-          htmlFor="filter"
-          placeholder=" Filter by title, companies, expertise…"
+        <input
+          style={{ width: "450px" }}
+          type="text"
+          id="filter"
+          placeholder="Filter by title, companies, expertise…"
         />
-        <input type="text" id="filter" placeholder="Filter" />
       </InputContainer>
 
-      <InputContainer>
-        <img src={iconLocation} alt="Location Icon - Map" />
+      <InputContainer >
         <label
           htmlFor="locationFilter"
-          placeholder="Filter by location</label>"
-        />
+          placeholder="Filter by location"
+        ></label>
+        <img src={iconLocation} alt="Location Icon - Map" />
         <input type="text" id="locationFilter" placeholder="Location Filter" />
       </InputContainer>
 
-      <InputContainer>
-        <label htmlFor="checkbox">Full Time Only</label>
+      <SearchContainer >
         <input type="checkbox" id="checkbox" />
-      </InputContainer>
-
-      <Button type="submit">Search</Button>
+        <label htmlFor="checkbox">Full Time Only</label>
+        <Button type="submit">Search</Button>
+      </SearchContainer>
     </SearchBoxContainer>
   );
 }

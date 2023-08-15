@@ -2,33 +2,32 @@ import styled from "styled-components";
 
 export const SearchBoxContainer = styled.form`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
-  padding:10px;
-  width: 100%;
+  padding: 10px;
   border-radius: 4px;
+  margin-top: 2rem;
 `;
 
 export const InputContainer = styled.div`
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
-  width: 100%;
-  
-  img {
-    margin-right: 8px;
-  }
-
+display: flex;
   input {
-    flex: 1;
-    padding: 8px;
-    border: none;
+    padding: 16px;
     outline: none;
+    border: none;
+  }
+`;
+
+export const SearchContainer = styled.div`
+  input {
+    padding: 16px;
   }
 `;
 
 export const Button = styled.button`
   padding: 8px 24px;
-  background-color: #5964E0;
+  background-color: #5964e0;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -37,11 +36,9 @@ export const Button = styled.button`
   cursor: pointer;
   margin-left: 8px;
 
-  transition:  all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 
   &:hover {
-  background-color: #939BF4;
-
-    
+    background-color: #939bf4;
   }
 `;

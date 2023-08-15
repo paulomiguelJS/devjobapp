@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   background-image: url(${headerBackground});
   background-size: cover;
   border-bottom-left-radius: 100px;
+  max-height: 150px;
 `;
 
 export const Container = styled.div`
@@ -15,7 +16,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border: 1px solid red;
   max-width: 1120px;
   margin: 0 auto;
   padding: 52px 36px;
