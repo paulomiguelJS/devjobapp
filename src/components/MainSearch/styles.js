@@ -11,23 +11,69 @@ export const SearchBoxContainer = styled.form`
 `;
 
 export const InputContainer = styled.div`
-display: flex;
+  &:nth-child(2) {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25px; /* Adjust as needed to align the line */
+      width: 1px; /* Line width */
+      height: 100%; /* Line height */
+      background-color: #ccc; /* Line color */
+    }
+  }
+
   input {
     padding: 16px;
     outline: none;
     border: none;
+
+    &::placeholder {
+      color: #8c9096;
+    }
   }
 `;
 
 export const SearchContainer = styled.div`
-  input {
-    padding: 16px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px; /* Adjust as needed to align the line */
+    width: 1px; /* Line width */
+    height: 100%; /* Line height */
+    background-color: #ccc; /* Line color */
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid #939bf4;
+    border-radius: 4px;
+
+    &:checked {
+      appearance: auto;
+
+      accent-color: #939bf4;
+    }
+  }
+
+  label {
+    color: #19202d;
+    font-weight: bold;
+    margin-left: 8px;
   }
 `;
 
 export const Button = styled.button`
   padding: 8px 24px;
-  background-color: #5964e0;
+  background-color: #939bf4;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
