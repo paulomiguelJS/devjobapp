@@ -73,7 +73,7 @@ export const SearchContainer = styled.div`
 
 export const Button = styled.button`
   padding: 8px 24px;
-  background-color: #939bf4;
+  background-color: #5964E0;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
