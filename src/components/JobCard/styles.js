@@ -1,8 +1,9 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 
   max-width: 1120px;
   margin: 150px auto 0 auto;
