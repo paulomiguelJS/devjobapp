@@ -6,16 +6,15 @@ export const Container = styled.div`
   grid-gap: 2rem;
 
   max-width: 1120px;
-  margin: 150px auto 0 auto;
+  margin: 100px auto;
 `;
 
 export const JobContainer = styled.section`
   position: relative;
   background-color: #ffffff;
   padding: 2rem;
-
   width: 350px;
-
+  
   img {
     position: absolute;
     top: -26px;
